@@ -1,2 +1,19 @@
-# Finomoly
-Finomoly tracks your money so you know where it magically disappears. Fully tested with Postman, because broken endpoints are sad. Frontend coming soon — soon you can judge your spending in style.
+#Finomoly — The Money Detective
+
+Ever wonder where your money vanishes? Me too… so I built this.
+
+Finomoly is a fully tested Spring Boot backend that:
+
+Tracks your income and expenses
+
+Shows totals, highest spending, and savings
+
+Detects suspicious spending like your personal financial detective
+
+Sorts expenses neatly by date because chaos is not fun
+
+Fully tested with Postman — every endpoint works, trust me.
+
+Built with: Spring Boot, JPA/Hibernate, and MySQL.
+
+Coming soon: A frontend in just a few days so you can actually see all this magic instead of just sending JSON requests manually.
