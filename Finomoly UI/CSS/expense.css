@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    transition: background 1s ease;
+}
+
+.icon {
+    margin-top: 40px;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    animation: iconBounce 1.2s ease infinite alternate;
+}
+
+.icon:hover {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+@keyframes iconBounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.Expenses {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.head {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    width: 280px;
+    padding: 30px 25px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+    cursor: pointer;
+    animation: floatIn 0.8s ease forwards;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: #1a3f8b;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    transition: color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+    background: rgba(255,255,255,1);
+}
+
+.card:hover h3 {
+    color: #004aad; /* deeper blue on hover */
+}
+
+button {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+@keyframes floatIn {
+    0% { opacity: 0; transform: translateY(50px) scale(0.9); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 80%;
+        margin: 25px auto;
+    }
+    .head {
+        font-size: 2.5rem;
+    }
+    button {
+        width: 90%;
+    }
+}

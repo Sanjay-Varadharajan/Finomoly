@@ -1,0 +1,71 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+form#deleteExpenseForm {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form#deleteExpenseForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form#deleteExpenseForm input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form#deleteExpenseForm button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form#deleteExpenseForm button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}

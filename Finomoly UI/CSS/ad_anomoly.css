@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+.head {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #f5f5f5;
+}
+
+.anomaly-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 40px 20px;
+}
+
+.anomaly-card {
+    background-color: #2c2c44;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.anomaly-card h4 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.anomaly-card p {
+    margin: 6px 0;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.anomaly-card p strong {
+    color: #fff;
+}
+
+.anomaly-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 900px) {
+    .anomaly-card {
+        width: 90%;
+    }
+}

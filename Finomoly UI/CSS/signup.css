@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at top left, #89f7fe, transparent 60%),
+        radial-gradient(circle at bottom right, #66a6ff, transparent 60%),
+        linear-gradient(135deg, #e0f2ff, #f7fbff);
+}
+
+.signup-container {
+    width: 400px;
+    padding: 40px 32px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(18px);
+    border-radius: 18px;
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    animation: popIn 0.6s ease;
+}
+
+.signup-container img {
+    margin-bottom: 18px;
+}
+
+.signup-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 6px;
+}
+
+.signup-container p {
+    font-size: 14px;
+    color: #5b6b7c;
+    margin-bottom: 28px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #344054;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    margin: 6px 0 20px;
+    border-radius: 12px;
+    border: 1px solid #d0d7e2;
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+input::placeholder {
+    color: #9aa7b2;
+}
+
+input:focus {
+    border-color: #66a6ff;
+    box-shadow: 0 0 0 3px rgba(102, 166, 255, 0.25);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(102, 166, 255, 0.45);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.signup-container p a {
+    color: #66a6ff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.signup-container p a:hover {
+    text-decoration: underline;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

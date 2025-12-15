@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    min-height: 100vh;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+p {
+    color: #f1f5f9;
+    margin-top: 0;
+}
+
+#anomalyCardsContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.anomaly-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.anomaly-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+}
+
+.anomaly-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #1f2937;
+}
+
+.anomaly-card strong {
+    color: #111827;
+}
+
+.anomaly-card span {
+    font-weight: 600;
+    color: #2563eb;
+}
