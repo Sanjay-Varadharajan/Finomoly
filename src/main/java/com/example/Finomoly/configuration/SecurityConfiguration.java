@@ -31,7 +31,7 @@ public class SecurityConfiguration {
                  .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .authorizeHttpRequests(auth->auth
                         .requestMatchers("/auth/**").permitAll()
-                        .requestMatchers("/api/admin/**").permitAll()
+                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/user/**").hasRole("USER")
                         .anyRequest().authenticated()
                 );
@@ -53,3 +53,4 @@ public class SecurityConfiguration {
              return authenticationManagerBuilder.build();
     }
 }
+
